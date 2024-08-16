@@ -1,0 +1,150 @@
+.rajasthan-dishes-container {
+  padding: 20px;
+  background: linear-gradient(to right, #656869, #69908f, #3aa1c1);
+  text-align: center;
+  position: relative;
+}
+
+.rajasthan-dishes-container .title{
+  font-size: 50px;
+  padding-left: 20%;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.message-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(211, 211, 211, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.message-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+}
+
+.message-content.adding::before {
+  content: '';
+  display: block;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+  background-image: url('./images/smileyhappy1.gif');
+  background-size: cover;
+}
+
+.message-content.removing {
+  position: relative;
+}
+
+.message-content.removing::before {
+  content: '';
+  display: block;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+  background-image: url('./images/smileydull1.gif');
+  background-size: cover;
+}
+
+.message {
+  color: white;
+  font-size: 1.5em;
+}
+
+.dishes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dish-square {
+  width: calc(33.333% - 20px);
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.dish-square:hover {
+  transform: scale(1.05);
+}
+
+.dish1rj { background-image: url('./images/Classic\ Glazed\ Doughnuts1.webp'); }
+.dish2rj { background-image: url('./images/Chocolate\ Frosted\ Doughnuts1.jpg'); }
+.dish3rj { background-image: url('./images/Jelly-Filled\ Doughnuts.webp'); }
+.dish4rj { background-image: url('./images/Boston\ Cream\ Doughnuts1.jpg'); }
+.dish5rj { background-image: url('./images/Cinnamon\ Sugar\ Doughnuts1.webp'); }
+.dish6rj { background-image: url('./images/Blueberry\ Doughnuts1.jpg'); }
+.dish7rj { background-image: url('./images/Red\ Velvet\ Doughnuts1.jpg'); }
+.dish8rj { background-image: url('./images/Lemon\ Poppy\ Seed\ Doughnuts1.jpg'); }
+.dish9rj { background-image: url('./images/Coconut\ Doughnuts1.jpg'); }
+.dish10rj { background-image: url('./images/Salted\ Caramel\ Doughnuts1.jpeg'); }
+.dish11rj { background-image: url('./images/Churro\ Doughnuts1.jpg') }
+.dish12rj { background-image: url('./images/Strawberry\ Frosted\ Doughnuts1.jpg'); }
+.dish13rj { background-image: url('./images/Black\ Forest\ Doughnuts1.jpg'); }
+.dish14rj { background-image: url('./images/White\ Chocolate\ Raspberry\ Doughnuts1.webp'); }
+.dish15rj { background-image: url('./images/Pistachio\ Doughnuts1.jpg'); }
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.text {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.view-recipe-button, .favourites-button {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-recipe-button:hover, .favourites-button:hover {
+  background-color: #1d1d1d;
+}
+
+.star-icon {
+  margin-right: 5px;
+}
